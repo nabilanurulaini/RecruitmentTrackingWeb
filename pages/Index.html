@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Recruitment Tracking</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Jobs</a>
+          </div>
+        </div>
+        <div class="d-flex">
+          <a class="btn btn-outline-primary me-2" href="signin.html">Sign in</a>
+          <a class="btn btn-primary" href="signup.html">Sign up</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- image with search bar inside -->
+    <div class="mt-5">
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-sm-5">
+              <input type="text" class="form-control" placeholder="Search Job" aria-label="City"/>
+            </div>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" placeholder="Location" aria-label="State"/>
+            </div>
+            <div class="col-sm">
+              <button type="button" class="btn btn-primary">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- top jobs -->
+    <div class="container">
+      <h4 class="form-label">Top Jobs</h4>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <div class="col mt">
+          <div class="card h-100 ">
+            <div class="card-body">
+              <h5 class="card-title">Software Engineer</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequuntur expedita unde animi, mollitia et modi quaerat eligendi facilis commodi dolor, voluptates veritatis! Reiciendis assumenda sequi dolore dicta consequatur reprehenderit!
+              </p>
+              <div>
+                <button type="button" class="btn btn-primary">Apply</button>
+                <button type="button" class="btn btn-outline-primary">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Business Analyst</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae qui dicta atque? Iure, at ea reprehenderit optio odit cumque tempora voluptatibus error praesentium quia beatae esse suscipit quasi laborum. Dolorem!</p>
+              <div>
+                <button type="button" class="btn btn-primary">Apply</button>
+                <button type="button" class="btn btn-outline-primary">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">System Analyst</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic. Sit, officiis aut quasi nemo ipsa ex, velit adipisci illo nesciunt sed in voluptates inventore doloribus nihil, ipsam deleniti illum!
+              </p>
+              <div>
+                <button type="button" class="btn btn-primary">Apply</button>
+                <button type="button" class="btn btn-outline-primary">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">© 2023 Company, Inc</span>
+        </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
