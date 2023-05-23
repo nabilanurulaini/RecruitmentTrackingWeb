@@ -1,49 +1,103 @@
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Recruitment Tracking</title>
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-          crossorigin="anonymous"
-        />
-      </head>
-      <body>
-        <!-- nav -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Recruitment Tracking</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  <a class="nav-link" href="jobs.html">Jobs</a>
-                </div>
-              </div>
-              <div class="d-flex">
-                <a class="btn btn-outline-primary me-2" href="signin.html">Sign in</a>
-                <a class="btn btn-primary" href="signup.html">Sign up</a>
-              </div>
-            </div>
-          </nav>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recruitment Tracking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar bg-dark navbar-expand-lg bg-zinc-900 opacity-80 fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="/Index">Formulatrix Career</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item text-white hover:disabled">
+          <a class="nav-link active " page" href="/Index">Home</a>
+        </li>
+        <li class="nav-item text-white">
+          <a class="nav-link" href="/Jobs">Jobs</a>
+        </li>
+        <li class="nav-item text-white">
+          <a class="nav-link " href="/Jobs">About Us</a>
+        </li>
+      </ul>
+      <!-- <form class="d-flex">
+        <a class="btn text-white bg-amber-500 hover:bg-amber-600 me-2 rounded-lg" href="signin.html">Sign in</a>
+        <a class="btn text-white border-2 border-amber-500 text-amber-500 hover:bg-amber-500 rounded-lg " href="signup.html">Sign up</a>
+      </form> -->
+      <div class="dropdown">
+        <button class="btn btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg dropdown-toggle" type="button"
+          id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Name User
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">My Profile</a></li>
+          <li><a class="dropdown-item" href="#">My Application</a></li>
+          <li><a class="dropdown-item text-white bg-amber-600 hover:bg-amber-500 me-2 " href="signup.html">Log out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
           <!-- content for apply job form -->
-          <div class="container shadow p-3 mb-5 bg-white rounded mt-5" style="background-color:#f8f9fa ">
-            <div class="mb-3">
-              <h3>Apply Job</h3>
-              <hr/>
-              <label for="Name" class="form-label">Phone Number</label>
-                <input type="text" class="form-control" id="Phone" name="Phone" placeholder="Phone number">
-                <label for="file" class="form-label mt-3">Upload CV/Resume</label>
-                <input type="file" class="form-control" id="file" name="file">
-                <button type="button" class="btn btn-primary mt-3">Submit</button>
-            
+          <div class="pt-32 pb-20 px-5">
+            <div class="container-fluid shadow p-3 mb-5"> 
+              <div>
+                <h3 class="text-xl">Apply Job Position</h3>
+              </div>
+              <div class="mt-5">
+                <label for="Name" class="form-label text-muted">Name</label>
+                <input type="text" class="form-control rounded-lg text-neutral-900" id="Name" name="Name" placeholder="Full name">
+                
+                <label for="Email" class="form-label text-muted mt-3">Email</label>
+                <input type="email" class="form-control rounded-lg text-neutral-900" id="Email" name="Email" placeholder="name@example.com">
+                
+                <label for="Phone" class="form-label text-muted mt-3">Phone Number</label>
+                <input type="number" class="form-control rounded-lg text-neutral-900" id="Phone" name="Phone" placeholder="Phone Number">
+                
+                <label for="GPA" class="form-label text-muted mt-3">GPA</label>
+                <input type="number" class="form-control rounded-lg text-neutral-900" step="0.01" min="0.00" max="4.00" id="GPA" name="GPA" placeholder="GPA">
+               
+                <label for="education_level" class="form-label text-muted mt-3">Education Level</label>
+                <div class="dropdown w-full">
+                  <select class="form-select text-muted" aria-label="Default select example">
+                    <option selected>Select education level</option>
+                    <option value="Doctorate">Doctorate</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="SMA/SMK">SMA/SMK</option>
+                  </select>
+                </div>
+                
+                <label for="Major" class="form-label text-muted mt-3">Major</label>
+                <input type="text" class="form-control rounded-lg text-neutral-900" id="Major" name="Major" placeholder="Major">
+                
+                <label for="University" class="form-label text-muted mt-3">University</label>
+                <input type="text" class="form-control rounded-lg text-neutral-900" id="University" name="University" placeholder="University">
 
+                <label for ="file" class="form-label text-muted mt-3">Upload CV</label>
+                <input type="file" class="form-control rounded-lg text-neutral-900" id="file" name="file" placeholder="Upload CV">
 
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                  <button type="submit" class=" btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg">Submit</button>
+                </div>
+                
+                 
+              </div>
             </div>
+          </div>
 
 
           </div>
