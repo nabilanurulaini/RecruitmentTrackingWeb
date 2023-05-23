@@ -1,95 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <title>Admin Recruitment Tracking</title>
-  </head>
-  <body>
-    <div class="d-flex w-100">
-      <aside
-        class="d-flex justify-content-center py-5 align-items-center vh-100"
-        style="width: 20%"
-      >
-        <nav class="nav nav-pills flex-column text-center vh-100 py-5">
-          <h1 class="mb-5">MENU</h1>
-          <div
-            class="d-flex flex-column justify-content-around"
-            style="height: 350px"
-          >
-            <div>
-              <a class="nav-link" href="administration.html">Administration</a>
-            </div>
-            <div>
-                <a class="nav-link" href="hr_interview.html">HR Interview</a>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recruitment Tracking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="grid grid-cols-5 h-screen">
+    <!-- Sidebar -->
+    <div class="bg-zinc-900 col-span-1 opacity-90">
+      <!-- Sidebar content -->
+      <nav>
+        <ul class="flex flex-col py-4">
+          <li class="px-4 py-2 text-white"> <a href="index.html">Home</a></li>
+          <li class="px-4 py-2 text-white"><a href="recruitment_process.html">Recruitment Process</a></li>
+          <li class="px-4 py-2 text-white">Services</li>
+          <li class="px-4 py-2 text-white">Contact</li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-span-4">
+      <!-- Main content goes here -->
+      <div class="d-flex">
+        <main class="p-5" style="height: 100vh; width: 80%">
+          <header class="mb-1">
+            <div class="d-flex justify-content-between align-items-center">
+              <input type="text" class="rounded" />
+              <div class="d-flex justify-content-md-end align-items-center" style="width: 150px">
+                <span class="mr-2">@ViewBag.AdminName</span>
               </div>
-              <div>
-                <a class="nav-link " href="user_interview.html">User Interview</a>
-              </div>
-              <div>
-                <a class="nav-link" href="offering.html">Offering</a>
-              </div>
-          </div>
-        </nav>
-      </aside>
-      <main class="p-5" style="height: 100vh; width: 80%">
-        <header class="mb-5">
-          <div class="d-flex justify-content-between">
-            <h3>Software Engineer</h3>
-            <div
-              class="d-flex justify-content-around align-items-center"
-              style="width: 150px"
-            >
-              <span>HR Name</span>
-              <div
-                class="rounded-circle"
-                style="width: 40px; height: 40px; background-color: aquamarine"
-              >
             </div>
-            </div>
-          </div>
-        </header>
-        <!-- content -->
-          
-        <div class="py-2">
-            <form>
+            <div class="py-2">
+              <form>
                 <div class="mb-3">
                   <label for="JobPosition" class="form-label">Job Position</label>
-                  <input type="text" class="form-control" id="JobPosition">
+                  <input type="text" class="form-control rounded-lg" id="JobPosition">
                 </div>
                 <div class="mb-3">
                   <label for="JobDescription" class="form-label">Job Description</label>
                   <textarea type="text" class="form-control" id="JobDescription"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="JobRequirement" class="form-label">Job Requirement</label>
-                    <textarea type="text" class="form-control" id="JobRequirement"></textarea>
+                  <label for="JobRequirement" class="form-label">Job Requirement</label>
+                  <textarea type="text" class="form-control rounded-lg" id="JobRequirement"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="JobRequirement" class="form-label">Office Location</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Select office location</option>
-                        <option value="Salatiga">Salatiga</option>
-                        <option value="Semarang">Semarang</option>
-                        <option value="Bandung">Bandung</option>
-                      </select>
+                  <label for="JobRequirement" class="form-label">Office Location</label>
+                  <select class="form-select rounded-lg" aria-label="Default select example">
+                    <option selected>Select office location</option>
+                    <option value="Salatiga">Salatiga</option>
+                    <option value="Semarang">Semarang</option>
+                    <option value="Bandung">Bandung</option>
+                  </select>
                 </div>
-                
-              </form>
-        </div>
-        
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary" type="submit">Submit</button>
-          </div>
       
-      </main>
+              </form>
+            </div>
+      
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn bg-green-500 text-white hover:bg-green-600 rounded-lg" type="submit">Preview</button>
+              <button class="btn bg-green-500 text-white hover:bg-green-600 rounded-lg" type="submit">Post</button>
+            </div>
+          </header>
+        </main>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
